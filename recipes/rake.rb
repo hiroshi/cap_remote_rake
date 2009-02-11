@@ -1,5 +1,6 @@
 namespace :rake do
   task :default do
-    run "(cd #{current_path}; RAILS_ENV=production rake #{ENV['TASK']})"
+    rails_env = fetch(:rails_env, "production")
+    run "(cd #{current_path}; RAILS_ENV=#{rails_env} rake #{ENV['TASK']})"
   end
 end
