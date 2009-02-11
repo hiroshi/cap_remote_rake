@@ -1,0 +1,13 @@
+CapRemoteRake
+=============
+
+This plugin defines the "rake" task for cap command.
+
+
+Example
+=======
+
+ cap rake TASK="db:create"
+
+
+Copyright (c) 2009 Hiroshi Saito (yakitara.com), released under the MIT license
